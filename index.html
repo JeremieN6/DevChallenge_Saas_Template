@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    :root{
+        --bg-color: #121826;
+        --bg-card-color: #212936;
+        --color-title: #E5E7EB;
+
+        --font-size-title: 2.5rem;
+        --font-size-small-title: 1.25rem;
+        --font-size-body-text: 1rem;
+        --font-weight-semi-bold: 600;
+        --font-weight-regular: 400;
+
+        
+        --main-text-color: #9DA3AE;
+        --white: #FFF;
+
+        --bg-emoticon-one: #DEE9FC;
+        --bg-emoticon-two: #FCEED8;
+        --bg-emoticon-three: #FBE5E6;
+    }
+    *{
+        font-family: "Outfit", sans-serif;
+    }
+    body{
+        background-image: url(./assets/Background_image.svg);
+        background-color: var(--bg-color);
+    }
+    .container_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: var(--white);
+    }
+    .container_subtitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        font-size: var(--font-size-title);
+        color: var(--color-title);
+        font-weight: var(--font-weight-semi-bold);
+        margin-bottom: 0;
+    }
+    .subtitle{
+        color: var(--main-text-color);
+        font-size: var(--font-size-body-text);
+    }
+    .container_card {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 25px;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-card-color);
+        padding: 20px;
+        border-radius: 20px;
+        color: var(--white);
+        max-width: 444px;
+    }
+    .container_round_emoticon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container_round_emoticon1{
+        background-color: var(--bg-emoticon-one);
+    }
+    .container_round_emoticon2{
+        background-color: var(--bg-emoticon-two);
+    }
+    .container_round_emoticon3{
+        background-color: var(--bg-emoticon-three);
+    }
+    .content_emoticon{
+        font-size: var(--font-size-small-title);
+    }
+    p.card_title {
+        font-size: var(--font-size-small-title);
+        color: var(--color-title);
+        font-weight: var(--font-weight-semi-bold);
+        margin-bottom: 0;
+        width: 90%;
+    }
+    .card_subtitle{
+        color: var(--main-text-color);
+        font-weight: var(--font-weight-regular);
+        width: 70%;
+    }
+    img.card_image {
+        width: 100%;
+        border-radius: 20px;
+    }
+    @media (min-width: 768px){
+        .container_card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+        }
+    }
+</style>
+<body>
+    <div class="container_main_page">
+        <diV class="content_main_page">
+            <div class="container_header">
+                <div class="container_title">
+                    <h1 class="title">Quality feedbacks for <br> your SaaS products</h1>
+                </div>
+                <div class="container_subtitle">
+                    <p class="subtitle">
+                        The blocks &amp; components you need
+                    </p>
+                </div>
+            </div>
+            <div class="container_content_page">
+                <div class="container_card">
+                    <div class="card">
+                        <div class="container_round_emoticon container_round_emoticon1">
+                            <p class="content_emoticon">
+                                ✋
+                            </p>
+                        </div>
+                        <div class="container_card_title">
+                            <p class="card_title">
+                                Collect Feedback at Multiple Touchpoints
+                            </p>
+                        </div>
+                        <div class="container_card_subtitle">
+                            <p class="card_subtitle">
+                                Provide a comprehensive understanding of the customer experience.
+                            </p>
+                        </div>
+                        <div class="container_card_image">
+                            <img src="./assets/photo_2.png" alt="Image 1" class="card_image">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="container_round_emoticon container_round_emoticon2">
+                            <p class="content_emoticon">
+                                🥅
+                            </p>
+                        </div>
+                        <div class="container_card_title">
+                            <p class="card_title">
+                                Ask Targeted and Specific Questions
+                            </p>
+                        </div>
+                        <div class="container_card_subtitle">
+                            <p class="card_subtitle">
+                                Avoid vague or open-ended questions that may not yield actionable insights.
+                            </p>
+                        </div>
+                        <div class="container_card_image">
+                            <img src="./assets/photo_1.png" alt="Image 1" class="card_image">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="container_round_emoticon container_round_emoticon3">
+                            <p class="content_emoticon">
+                                💬
+                            </p>
+                        </div>
+                        <div class="container_card_title">
+                            <p class="card_title">
+                                Ask Targeted and Specific Questions
+                            </p>
+                        </div>
+                        <div class="container_card_subtitle">
+                            <p class="card_subtitle">
+                                Avoid vague or open-ended questions that may not yield actionable insights.
+                            </p>
+                        </div>
+                        <div class="container_card_image">
+                            <img src="./assets/photo_3.png" alt="Image 1" class="card_image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </diV>
+    </div>
+</body>
+</html>
