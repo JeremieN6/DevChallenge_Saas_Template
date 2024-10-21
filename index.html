@@ -22,8 +22,8 @@
         --main-text-color: #9DA3AE;
         --white: #FFF;
 
-        --bg-emoticon-one: #DEE9FC;
-        --bg-emoticon-two: #FCEED8;
+        --bg-emoticon-one: #FCEED8;
+        --bg-emoticon-two: #DEE9FC;
         --bg-emoticon-three: #FBE5E6;
     }
     *{
@@ -49,7 +49,7 @@
         font-size: var(--font-size-title);
         color: var(--color-title);
         font-weight: var(--font-weight-semi-bold);
-        margin-bottom: 0;
+        margin: 0;
     }
     .subtitle{
         color: var(--main-text-color);
@@ -108,16 +108,32 @@
         font-weight: var(--font-weight-regular);
         width: 70%;
     }
-    img.card_image {
+    .card_image {
+        display: block;
         width: 100%;
         border-radius: 20px;
+    }
+    .card_image_desktop1,
+    .card_image_desktop2,
+    .card_image_desktop3{
+        display: none;
     }
     @media (min-width: 768px){
         .container_card {
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
-            margin-top: 50px;
+            margin-top: 20px;
+        }
+        .card_image{
+            display: none;
+        }
+        .card_image_desktop1,
+        .card_image_desktop2,
+        .card_image_desktop3{
+            display: block;
+            width: 100%;
+            border-radius: 20px;
         }
     }
 </style>
@@ -154,6 +170,7 @@
                         </div>
                         <div class="container_card_image">
                             <img src="./assets/photo_2.png" alt="Image 1" class="card_image">
+                            <img src="./assets/photo_2@2x.png" alt="Image 1" class="card_image_desktop2">
                         </div>
                     </div>
                     <div class="card">
@@ -174,6 +191,7 @@
                         </div>
                         <div class="container_card_image">
                             <img src="./assets/photo_1.png" alt="Image 1" class="card_image">
+                            <img src="./assets/photo_1@2x.png" alt="Image 1" class="card_image_desktop1">
                         </div>
                     </div>
                     <div class="card">
@@ -194,6 +212,7 @@
                         </div>
                         <div class="container_card_image">
                             <img src="./assets/photo_3.png" alt="Image 1" class="card_image">
+                            <img src="./assets/photo_3@2x.png" alt="Image 1" class="card_image_desktop3">
                         </div>
                     </div>
                 </div>
